@@ -69,12 +69,7 @@ app.get("/leden", async (req, res) => {
 app.post("/addUser", async (req, res) => {
     const { voornaam, achternaam, email, gsm, straat, postcode, woonplaats, geboortedatum, sindsdatum, reknr, instrument,  helper } = req.body;
 
-    // Controleer of er een bestand is geüpload
-    if (req.file) {
-        const afbeeldingPad = req.file.path; // Pad naar de opgeslagen afbeelding op de server
 
-        
-    }
 
     try {
         console.log("Ontvangen voornaam:", voornaam);
@@ -100,11 +95,7 @@ app.post("/leden/addUser", async (req, res) => {
     const { voornaam, achternaam, email, gsm, straat, postcode, woonplaats, geboortedatum, sindsdatum, reknr, instrument, helper } = req.body;
 
     // Controleer of er een bestand is geüpload
-    if (req.file) {
-        const afbeeldingPad = req.file.path; // Pad naar de opgeslagen afbeelding op de server
-
-
-    }
+   
 
     try {
         console.log("Ontvangen voornaam:", voornaam);
